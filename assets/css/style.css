@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* variaveis */
+
+:root{
+
+    --font: 'Montserrat', sans-serif;
+    --primary-color:#201077;
+    
+}
+
+
+
+/* classes*/
+
+
+.main-bg{
+    background-image: url(/assets/img/backgroud-primary.svg);
+    font-family: var(--font);
+}
+
+.white-bg{
+    background-image: url(/assets/img/backgroud-secundary.svg);
+}       
+.width-100{
+    width: 100%;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 40px;
+}
+
+
+.main{
+    width: 50%;
+    height: 30rem;
+    margin: auto;
+    
+    display: flex;
+
+}
+
+.questão{
+    margin: 40px;
+}
+
+.perguntas{
+    display: block;
+
+}
+
+.alternativas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.alternativas input{
+    width: 80%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    cursor: pointer;
+}
+
+.alternativas input:hover{
+    transition: all 0.3s ease-in-out;
+    background-color: var(--primary-color);
+}
+
+.btns-muda{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btns-muda input,
+.btn-tentar-novamente{
+    font-size:24px;
+    margin: 0 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    cursor: pointer;
+    
+}
+.btn-tentar-novamente{
+    margin: 20px;
+}
+.btn-tentar-novamente:hover{
+    background-color: var(--primary-color);
+}
+.btns-muda input:hover{
+    background-color: var(--primary-color);
+}
+.footer{
+    margin-top: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+.pressionada{
+    background-color: var(--primary-color);
+}
+
+.mensagem-resultado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}.btn-none{
+    display: none;
+}
+
+.mensagem-resultado p{
+    font-weight: bold;
+}
+.mensagem-resultado h2,
+.mensagem-resultado p,
+.mensagem-resultado img{
+    margin: 20px;
+}

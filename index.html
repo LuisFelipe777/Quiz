@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>    
+    <link href = "https: //fonts.googleapis.com/css2? family = Montserrat: wght @ 600 & display = swap "rel =" stylesheet ">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Quiz</title>
+</head>
+<body class="main-bg"> 
+    <div class="header white-bg">
+        <div class="titulo-principal">
+            <h1>Teste seus conhecimentos</h1>
+        </div>
+    </div>
+
+    <div class="quiz">
+    <div class="main white-bg">
+        <div class="perguntas width-100">
+            <div class="questão" >
+              <h2 id="alternativa">  1 - qual seu nome </h2>
+            </div>
+            <div class="alternativas" >
+                  <input type="button" id="letra-a">
+                  <input type="button" id="letra-b">
+                  <input type="button" id="letra-c">
+                  <input type="button" id="letra-d">
+            </div>
+            <div class="btns-muda width-100">
+                <input type="button" id="btn-muda" value="avancar" class="btn-none" onclick="avancarQuestao()">
+            </div>
+           
+            
+        </div>
+             <div class="mensagem-resultado btn-none">
+
+                    <h2 id="mensagem-reacao">       
+                    </h2>
+                    <p id="msg-qtd-acerto"></p>
+                    <img id="gif-resultado" src="assets/img/gif-palmas-alegria-excitação.gif" style = "width: 300px; height: auto;" alt="">
+                    <input type="button" value="Tentar novamente" class="btn-tentar-novamente" onclick="tentarNovamente()">
+            </div>
+</div>
+
+<footer class="footer white-bg"> Desenvolvido por Luis Felipe </footer>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
